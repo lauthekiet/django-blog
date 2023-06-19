@@ -77,12 +77,25 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'OPTIONS': {
-            'service': 'my_service',
-            'passfile': '.my_pgpass',
-        },
+        'NAME': 'studydjango',
+        'USER': 'django_conn',
+        'PASSWORD': 'Huy#325755',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
+
+# Django 4 new feature
+# Support for connecting by a service name, and specifying a password file was added.
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'OPTIONS': {
+#             'service': 'my_service',
+#             'passfile': '.my_pgpass',
+#         },
+#     }
+# }
 
 # DATABASES = {
 #     'default': {
